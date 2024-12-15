@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Application of Information Security</title>
+@extends('homepage.layouts.app')
+
+@section('title', 'Web Application of Information Security')
+
+@section('content')
+
     <style>
         body {
             margin: 0;
@@ -51,14 +51,5 @@
             background-color: #0056b3;
         }
     </style>
-</head>
-<body>
-    <div class="container">
-        <h1>WEB APPLICATION OF INFORMATION SECURITY</h1>
-        <div class="buttons">
-            <a href="{{ url('/login') }}" class="button">LOG IN</a>
-            <a href="{{ url('/register') }}" class="button">REGISTER</a>
-        </div>
-    </div>
-</body>
-</html>
+
+@endsection
